@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Utilizar caracteres brasileiros -->
+	<meta charset="utf-8">
+
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"> 
+	<!-- Usado para responsividade do site -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Links para o arquivo de estilo e do css do bootstrap -->
+	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+
+	<title>Texto em Vídeo</title>
+</head>
+<body>
+	<!-- Criação do menu superior -->
+	<nav class="navbar  navbar-expand-lg">
+		<div class="container topo">
+			<a class ="navbar-brand mb-9" href="index.html">
+				<img src="img/back.png">
+			</a>
+		</div>
+	</nav>
+	<!-- Fim do menu superior -->
+	
+
+	<!-- Contatos -->
+	<div class="container">
+		<div class="titulos" id="contatos">
+			<h3>Texto em Vídeo</h3>
+			<h6>
+				<p>Esse sketch foi feito como estudo pessoal. No estudo, utilizo os conceitos de obtenção e manipulação dos dados dos pixels de uma imagem,
+					no caso, um vídeo em tempo real para aplicar sobre a imagem um mosaico de strings, usando também os conceitos de manipulação de strings.<p>
+
+				<p>A primeira coisa a ser feita depois de importar a biblioteca de vídeo e a fonte a ser utilizada é ligar a captura de vídeo e armazenar os 
+				dados de cada pixel da imagem, aqui, queremos a cor de cada um desses pixels. Para isso usaremos loops aninhados para percorrer cada linha e 
+				coluna da imagem.</p>
+
+				<p>Com as cores obtidas, armazenaos elas numa variável de cor, essa variável será usada em em cada letra das strings que estamos utilizando.
+				Com os loops aninhados que utilizamos na etapa anterior, já temos a posição de cada pixel da imagem, agora é só expor as letras das strings em suas devidas posições e aplicar nelas a cor armazenada na variável de cores.</p>
+
+				<p>Para quem não tem muita prática com esse tipo de sketch pode parecer meio complexo, mas lendo o código com calma e conhecendo as funções, pode-se entender direitinho o processo, caso necessite, faça um rastreio :).</p>
+
+				<p>O resultado é bem divertido e pode ser conferido abaixo:<p>
+
+				<div class="canvas">
+				<div>
+					<img src="img/texto_em_video.gif">
+				</div>
+				</div>
+
+				<p>Uma observação quanto ao download, baixe a pasta “Texto em video” inteira pois as fontes usadas para personalização estão nela, e sem as fontes o programa provavelmente não funcionará :)</p>	
+
+			</h6>
+				
+			<div id= "link_codigo">
+				<a  href="https://drive.google.com/open?id=1whRp6AuLbDgP1q_DyB3iJjkRM6dBEIhx" target="_blank">Link para download do código</a>
+			</div>
+			
+			
+			
+
+		</div>
+	
+	<!-- Fim do contatos -->
+
+	<div class="rodape">
+		Orgulhosamente desenvolvido por Igor Gomes
+	</div>
+	<footer>
+		<script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+		<script type="text/javascript" src="bootstrap.min.js"></script>
+		<script type="text/javascript" src="script.js"></script>
+		<script src="p5.js" type="text/javascript"></script>
+	</footer>
+</body>
+</html>

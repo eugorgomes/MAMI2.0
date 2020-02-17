@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Utilizar caracteres brasileiros -->
+	<meta charset="utf-8">
+
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"> 
+	<!-- Usado para responsividade do site -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Links para o arquivo de estilo e do css do bootstrap -->
+	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+
+	<title>Perlin Noise</title>
+</head>
+<body>
+	<!-- Criação do menu superior -->
+	<nav class="navbar  navbar-expand-lg">
+		<div class="container topo">
+			<a class ="navbar-brand mb-9" href="index.html">
+				<img src="img/back.png">
+			</a>
+		</div>
+	</nav>
+	<!-- Fim do menu superior -->
+	
+
+	<!-- Contatos -->
+	<div class="container">
+		<div class="titulos" id="contatos">
+			<h3>Perlin Noise</h3>
+			<h6>
+				<p>Esse sketch foi feito como estudo pessoal sobre probabilidade e distribuição não uniforme, mais especificamente, perlin noise.<p>
+
+				<p>Assim como a distribuição gaussiana abordada no post anterior, existem outras distribuições alternativas à distribuição uniforme, uma delas é a perlin noise.</p>
+
+				<p>Perlin noise gera números aleatórios que têm correlação e não mostra padrão dicernível, é bastante útil para simular comportamentos orgânicos, parecidos com a vida, eu particularmente gosto bastante de usar para simular voo de insetos, como moscas.</p>
+
+				<p>Essa característica de parecer mais orgânico se dá pelo fato de ser produzida uma sequência mais "suave" de números pseudo-aleatórios. </p>
+
+				<p>Abaixo podemos ver os gráficos de perlin noise e distribuição "uniforme" pelo tempo (imagens retiradas do livro "the nature of code"). Podemos ver claramente a diferença de suavidade na relação dos números no decorrer do tempo.</p>				
+
+				<div class="canvas">
+				<div>
+					<img src="img/noise1.png">
+					<img src="img/noise2.png">
+				</div>
+				</div>	
+
+				<p>Quando fazemos uso prático do perlin noise no processing, geralmente utilizamos um parâmetro da função para os saltos de tempo na obtenção do número pseudo-aleatório, esse salto é geralmente pequeno, pois, se muito grande, gera um efeito parecido com o puro random() do processing.
+				</p>
+
+				<p>Algumas demonstrações visuais do perlin noise podem ser vistas abaixo, além é claro de vários outros usos feitos dessa função em outros projetos desse repositório.</p>
+
+				<div class="canvas">
+				<div>
+					<img src="img/landscape.gif" width="400px">
+				</div>
+				</div>
+
+				<div class="canvas">
+				<div>
+					<img src="img/pink_sea.gif">
+				</div>
+				</div>
+
+				
+
+				
+
+			</h6>
+				
+			<div id= "link_codigo">
+				<a  href="https://drive.google.com/open?id=1pTvpAOxzokm_cFPYedyn8kiLqGZ58OEs" target="_blank">Link para download dos códigos</a>
+			</div>
+			
+			
+			
+
+		</div>
+	
+	<!-- Fim do contatos -->
+
+	<div class="rodape">
+		Orgulhosamente desenvolvido por Igor Gomes
+	</div>
+	<footer>
+		<script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+		<script type="text/javascript" src="bootstrap.min.js"></script>
+		<script type="text/javascript" src="script.js"></script>
+		<script src="p5.js" type="text/javascript"></script>
+	</footer>
+</body>
+</html>

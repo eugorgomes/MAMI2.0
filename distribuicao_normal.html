@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Utilizar caracteres brasileiros -->
+	<meta charset="utf-8">
+
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"> 
+	<!-- Usado para responsividade do site -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Links para o arquivo de estilo e do css do bootstrap -->
+	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+
+	<title>Distribuição Normal</title>
+</head>
+<body>
+	<!-- Criação do menu superior -->
+	<nav class="navbar  navbar-expand-lg">
+		<div class="container topo">
+			<a class ="navbar-brand mb-9" href="index.html">
+				<img src="img/back.png">
+			</a>
+		</div>
+	</nav>
+	<!-- Fim do menu superior -->
+	
+
+	<!-- Contatos -->
+	<div class="container">
+		<div class="titulos" id="contatos">
+			<h3>Distribuição Normal</h3>
+			<h6>
+				<p>Esse sketch foi feito como estudo pessoal sobre probabilidade e distribuição não uniforme, mais especificamente, ditribuição normal.<p>
+
+				<p>Como ja sabemos (ou não), a função random() do processing retorna número pseudo randômicos, eles são resultado de uma equação matemática que simula aleatoriedade. A função de aleatoriedade do processing produz uma distribuição de números "uniforme".</p>
+
+				<p>Mas e se um dia quisermos uma aleatoriedade que não seja uniforme, o que faremos? Com alguns truques podemos mudar a forma de uso da função random() para produzir uma distribuição não uniforme.</p>
+
+				<p>Por exemplo, caso quiséssemos simular a aleatoriedade da altura de uma população que varia de 1,0 até 2,0 metros, obviamente os casos extremos são mais raros que o meio termo, vai ser muito mais fácil encontrar uma pessoa de 1,70 do que uma pessoas de 1,0 metro de altura. Mas com a distribuição uniforme as alturas seriam "distribuidas" igualmente na população, o que soa irreal. </p>
+
+				<p>Para o caso do exemplo acima, podemos contar com a distribuição normal, ou distribuição gaussiana, onde a distribuição é maior na média e menor nos extremos dos valores.</p>
+
+				<p>Graficamente podemos ver isso na imagem abaixo, usando a distribuição gaussiana, as elipses, apesar de terem a posição horizontal randômica, tendem a permanecer no centro do canvas, poucas delas vão para as extremidades.</p>
+
+				<div class="canvas">
+				<div>
+					<img src="img/distribuicao_normal.gif">
+				</div>
+				</div>	
+
+				<p>Outro exemplo com 2 dimensões são essas gotas de tinta que também tendem a ficar no centro da tela.</p>
+
+				<div class="canvas">
+				<div>
+					<img src="img/gotas_de_tinta.gif">
+				</div>
+				</div>
+
+			</h6>
+				
+			<div id= "link_codigo">
+				<a  href="https://drive.google.com/open?id=1O2SzWnAw68IYQkavwUZsKMM5WuUkG645" target="_blank">Link para download dos códigos</a>
+			</div>
+			
+			
+			
+
+		</div>
+	
+	<!-- Fim do contatos -->
+
+	<div class="rodape">
+		Orgulhosamente desenvolvido por Igor Gomes
+	</div>
+	<footer>
+		<script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+		<script type="text/javascript" src="bootstrap.min.js"></script>
+		<script type="text/javascript" src="script.js"></script>
+		<script src="p5.js" type="text/javascript"></script>
+	</footer>
+</body>
+</html>

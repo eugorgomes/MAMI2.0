@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Utilizar caracteres brasileiros -->
+	<meta charset="utf-8">
+
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"> 
+	<!-- Usado para responsividade do site -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Links para o arquivo de estilo e do css do bootstrap -->
+	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+
+	<title>Espiral e Coodenadas Polares</title>
+</head>
+<body>
+	<!-- Criação do menu superior -->
+	<nav class="navbar  navbar-expand-lg">
+		<div class="container topo">
+			<a class ="navbar-brand mb-9" href="index.html">
+				<img src="img/back.png">
+			</a>
+		</div>
+	</nav>
+	<!-- Fim do menu superior -->
+	
+
+	<!-- Contatos -->
+	<div class="container">
+		<div class="titulos" id="contatos">
+			<h3>Espiral e Coodenadas Polares</h3>
+			<h6>
+				<p>Esse sketch foi feito como atividade da disciplina de matemática aplicada à multimídia 1. Nessa atividade nos foi proposto que criássemos uma representação do "The norman spiral", um fenômeno registrado no céu da Noruega em 2009 que pode ser visto no vídeo abaixo.<p>	
+
+				<div class="canvas">
+					<object width="800" height="500" data="https://www.youtube.com/embed/80__LLZK4zg"></object>
+				</div>			
+
+				<p>Para a criação da espiral utilizei os conceitos de coordenadas polares, onde as posições X e Y das elipses que formam a espiral eram dadas
+				pelas seguintes equações:</p>
+
+				<p>Posição X = R x Cos(A)<br>
+					Posição Y = R x Sen(A) </p>
+
+				<p>Onde R é a distância entre a partícula e o ponto de origem definido pelo sketch, no caso do círculo trigonométrico é o raio do círculo, e A é o ângulo entre o ponto da partícula e o ponto de origem definido pelo skecth. </p>
+
+				<p>Para a espiral acontecer, as posições foram definidas pelas equações de coordenadas polares, porém, as variáveis de ângulo e de raio eram incrementadas a cada loop do sketch, com isso ao mesmo tempo que a partícula gira em torno de sua origem, ela toma uma distância da mesma, criando um efeito de espiral. Além disso, alguns ajustes foram feitos para que a imagem da espiral tivesse como origem o centro do canvas.</p>
+
+
+				<p>O resultado desse processo foi esse:</p>
+
+				<div class="canvas">
+					<img src="img/espiral.webp">
+				</div>
+
+			</h6>
+			<div id= "link_codigo">
+				<a  href="https://drive.google.com/open?id=1CCsRzJ4IV0m73_ORBPD5TCpnLy0VdInI" target="_blank">Link para download do código</a>
+			</div>
+			
+
+		</div>
+		
+
+	</div>
+		
+
+	</div>
+	<!-- Fim do contatos -->
+
+	<div class="rodape">
+		Orgulhosamente desenvolvido por Igor Gomes
+	</div>
+	<footer>
+		<script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+		<script type="text/javascript" src="bootstrap.min.js"></script>
+		<script type="text/javascript" src="script.js"></script>
+		<script src="p5.js" type="text/javascript"></script>
+	</footer>
+</body>
+</html>

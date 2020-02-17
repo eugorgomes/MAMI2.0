@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Utilizar caracteres brasileiros -->
+	<meta charset="utf-8">
+
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"> 
+	<!-- Usado para responsividade do site -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Links para o arquivo de estilo e do css do bootstrap -->
+	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+
+	<title>Transição de Imagens</title>
+</head>
+<body>
+	<!-- Criação do menu superior -->
+	<nav class="navbar  navbar-expand-lg">
+		<div class="container topo">
+			<a class ="navbar-brand mb-9" href="index.html">
+				<img src="img/back.png">
+			</a>
+		</div>
+	</nav>
+	<!-- Fim do menu superior -->
+	
+
+	<!-- Contatos -->
+	<div class="container">
+		<div class="titulos" id="contatos">
+			<h3>Transição de Imagens</h3>
+			<h6>
+				<p>Esse sketch foi feito como atividade da disciplina de matemática aplicada à multimídia 1. Essa atividade nos propôs criar e explicar, com base na teoria dos conjuntos um dos efeitos de transição do vídeo abaixo.<p>
+ 
+				<div class="canvas">
+					<object width="425" height="344" data="https://www.youtube.com/embed/6n7GoNmgHGI"></object>
+				</div>
+				
+
+				<p>Eu escolhi uma transição simples em que uma imagem vai sobrepondo parcialmente a outra imagem até que aquela esteja completa na tela.</p>
+
+				<p>No efeito escolhido temos o conjunto de pixels que formam a imagem inicial, vamos chamar esse conjunto de A, e o conjunto de pixels que formam a imagem final, chamaremos esse conjunto de B. No decorrer da transição, algumas faixas de pixels do conjunto B sobrepõem o conjunto A, criando então um conjunto de A união B. no final da transição temos então somente o conjunto B formando a imagem final.</p>
+
+				<p>O resultado desse processo foi esse:</p>
+
+				<div class="canvas">
+					<img src="img/transicao.webp">
+				</div>
+
+				<p>Uma observação quanto ao download, baixe a pasta “transição de imagens” inteira pois as imagens usadas para personalização estão nela, e sem as imagens o programa provavelmente não funcionará :)</p>	
+			</h6>
+			<div id= "link_codigo">
+				<a  href="https://drive.google.com/open?id=1oiiHB-0j43HYYtxgZWR4MfFgxL1vquhS" target="_blank">Link para download do código</a>
+			</div>
+			
+
+		</div>
+		
+
+	</div>
+		
+
+	</div>
+	<!-- Fim do contatos -->
+
+	<div class="rodape">
+		Orgulhosamente desenvolvido por Igor Gomes
+	</div>
+	<footer>
+		<script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+		<script type="text/javascript" src="bootstrap.min.js"></script>
+		<script type="text/javascript" src="script.js"></script>
+		<script src="p5.js" type="text/javascript"></script>
+	</footer>
+</body>
+</html>

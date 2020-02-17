@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Utilizar caracteres brasileiros -->
+	<meta charset="utf-8">
+
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"> 
+	<!-- Usado para responsividade do site -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Links para o arquivo de estilo e do css do bootstrap -->
+	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+
+	<title>Geometria</title>
+</head>
+<body>
+	<!-- Criação do menu superior -->
+	<nav class="navbar  navbar-expand-lg">
+		<div class="container topo">
+			<a class ="navbar-brand mb-9" href="index.html">
+				<img src="img/back.png">
+			</a>
+		</div>
+	</nav>
+	<!-- Fim do menu superior -->
+	
+
+	<!-- Contatos -->
+	<div class="container">
+		<div class="titulos" id="contatos">
+			<h3>Geometria</h3>
+			<h6>
+				<p>Esse sketch foi feito como atividade da disciplina de matemática aplicada à multimídia 1. A tarefa proposta foi que, considerando a Lei Federal Nº 5.700, apresentássemos a crianção do procedimento mostraBandeiraBrasil(x,y,z).<p>
+
+				<p>Primeiramente foi necessário verificar o que diz a Lei 5.700, esta expõe o padrão ao qual a bandeira do Brasil deve reproduzida, para esta atividade só é necessário saber que podemos tomar como base a largura desejada, essa largura deve ser dividida em 14 partes iguais, cada parte será um módulo, o comprimento da bandeira deve ter 20 módulos, a distância dos vértices do losango amarelo ao quadro extremo será de 1.7 módulos e o círculo azul no meio do losango tem raio de 3 módulos.</p>
+
+				<p>Com essas informações temos as dimensões corretas das partes geométricas da bandeira, e com algumas pesquisas na internet encontrei os códigos RGB das cores da bandeira, 0/156/59 para o verde, 255/223/0 para o amarelo e  0/39/118 para o azul.<p>
+
+				<p>Com isso, funções como rect(), ellipse() e quad() do processing e alguns cálculos para encontrar as posições corretas de cada forma geométrica já é possível fazer uma representação simplificada da bandeira como essa:</p>
+
+				<div class="canvas">
+				<div>
+					<img src="img/bandeira.webP">
+				</div>
+				</div>
+				
+				<p>Porém, o processo pode ser ainda mais fácil se empregarmos funções como rectMode() e ellipseMode(), por exemplo, no processo sem essas funções é preciso calcular a distância entre a origem do retângulo e o centro da bandeira, já que normalmente um retângulo é criando na sua extremidade superior esquerda, é aí que a função rectMode() ajuda, se usarmos rectMode(CENTER), a origem do retângulo é o seu centro, isso facilita as coisas pois a função ellipse() tem como padrão a origem no centro.</p>
+
+			<div id= "link_codigo">
+				<a  href="https://drive.google.com/open?id=1yLM3CygQX_2GqI6JnpA2FwsJVddJSFWP" target="_blank">Link para download do código</a>
+			</div>
+			
+			
+			
+
+		</div>
+	
+	<!-- Fim do contatos -->
+
+	<div class="rodape">
+		Orgulhosamente desenvolvido por Igor Gomes
+	</div>
+	<footer>
+		<script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+		<script type="text/javascript" src="bootstrap.min.js"></script>
+		<script type="text/javascript" src="script.js"></script>
+		<script src="p5.js" type="text/javascript"></script>
+	</footer>
+</body>
+</html>

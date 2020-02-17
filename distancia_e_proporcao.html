@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Utilizar caracteres brasileiros -->
+	<meta charset="utf-8">
+
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"> 
+	<!-- Usado para responsividade do site -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Links para o arquivo de estilo e do css do bootstrap -->
+	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+
+	<title>Distância e Proporção</title>
+</head>
+<body>
+	<!-- Criação do menu superior -->
+	<nav class="navbar  navbar-expand-lg">
+		<div class="container topo">
+			<a class ="navbar-brand mb-9" href="index.html">
+				<img src="img/back.png">
+			</a>
+		</div>
+	</nav>
+	<!-- Fim do menu superior -->
+	
+
+	<!-- Contatos -->
+	<div class="container">
+		<div class="titulos" id="contatos">
+			<h3>Distância e Proporção</h3>
+			<h6>
+				<p>Esse sketch foi feito como atividade da disciplina de matemática aplicada à multimídia 1.A atividade nos pedia que explicássemos como a posição do mouse, numa janela 4:3, pode mover um círculo no interior de um retângulo de proporção 16:9 centralizado na tela usando as funções dist() e map() do processing.<p>
+
+				<p>A resolução dessa atividade foi relativamente simples, chegando a não precisar da função dist(), fiz basicamente na base da proporção usando a função map(), essa função basicamente transforma intervalos, no caso, transformei o intervalo de possibilidades do mouseX (0,800) em um intervalo que vai de 250 a 550 (comprimento do retângulo menos o diâmetro da elipse) e transformei o intervalo de possibilidades do mouseY(0,600) em um intervalo que vai de 220 a 380 ( altura retângulo menos o diâmetro da elipse), dessa forma a elipse não saía da área definida pelo retângulo.</p>
+
+				<p>O resultado foi esse:<p>
+
+				<div class="canvas">
+				<div>
+					<img src="img/distancia_e_proporcao.webP">
+				</div>
+				</div>
+				
+			<div id= "link_codigo">
+				<a  href="https://drive.google.com/open?id=1nCUKipWUhEJ02SQZb0RyvU8mcB5i_CVR" target="_blank">Link para download do código</a>
+			</div>
+			
+			
+			
+
+		</div>
+	
+	<!-- Fim do contatos -->
+
+	<div class="rodape">
+		Orgulhosamente desenvolvido por Igor Gomes
+	</div>
+	<footer>
+		<script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+		<script type="text/javascript" src="bootstrap.min.js"></script>
+		<script type="text/javascript" src="script.js"></script>
+		<script src="p5.js" type="text/javascript"></script>
+	</footer>
+</body>
+</html>

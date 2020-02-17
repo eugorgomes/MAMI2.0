@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Utilizar caracteres brasileiros -->
+	<meta charset="utf-8">
+
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"> 
+	<!-- Usado para responsividade do site -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Links para o arquivo de estilo e do css do bootstrap -->
+	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+
+	<title>Tonari no Totoro</title>
+</head>
+<body>
+	<!-- Criação do menu superior -->
+	<nav class="navbar  navbar-expand-lg">
+		<div class="container topo">
+			<a class ="navbar-brand mb-9" href="index.html">
+				<img src="img/back.png">
+			</a>
+		</div>
+	</nav>
+	<!-- Fim do menu superior -->
+	
+
+	<!-- Contatos -->
+	<div class="container">
+		<div class="titulos" id="contatos">
+			<h3>Tonari no Totoro</h3>
+			<h6>
+					<p>Como eu disse anteriormente no sketches dos vagalumes, fui incubido de preparar uma aplicação interativa com o tema do studio ghibli para uma apresentação da camerata de cordas da UFC, fiz um estudo usando o túmulo dos vagalumes mas aí veio a lista com as músicas e para a minha surpresa não seria tocada nenhuma música do filme... houve então uma reunisão com a equipe que feria as interações e as músicas foram divididas, fiquei com uma música de "tonari no totoro", mais especificamente, teria que produzir uma interação com a 
+					cena em que eles esperam o onibus na chuva.<p>
+
+					<p>O estudo feito anteriormente foi de pouco uso nesse caso, pois a ideia foi de fazer o volume e a velocidade da chuva variarem de acordo com a intensidade da música tocada na hora, então tanto o perlin noise quanto a luminosidade dos vagalumes de antes não seriam muito úteis.</p>
+
+					<p>Usei então as imagens da cena descrita acima junto com outras imagens para fazer uma animação do totoro piscando periodicamente.
+					Tendo as imagens, parti para a parte mais complexa, a chuva e sua interação com os gruarda-chuvas e o som. Para os guarda-chuvas
+					usei objetos invisíveis para que as gotas pudessem ser rebatidas, esse rebatimento acontece graças à uma biblioteca de física.
+					Tendo isso, as partículas foram adicionadas simulando a chuva que cai sobre os personagens. Usando uma biblioteca de manipulação
+					de sons, capturei os valores de intensidade da música que era tocada em tempo real e esses ditavam o volume e a velocidade de 
+					queda das partículas de chuva.</p>
+
+					<p>Aqui está uma demonstração visual do estudo:</p>
+
+				<div class="canvas">
+					 <video width="800" height="500" controls>
+					  <source src="img/totoro_video.mp4" type="video/mp4">
+					  
+						Your browser does not support the video tag.
+					</video> 
+				</div>
+
+					<p>O vídeo está sem som por questões técnicas, porém, como dito, a velocidade e volume da chuva reagem de acordo com o som tocado no ambiente.
+					Caso queira experimentar isso, peço que baixe o sketch em seu computador e tente estalar os dedos próximo ao microfone.</p>
+
+					<p>Aqui estão alguns registros da apresentação ao vivo com a interação em tempo real. A qualidade do vídeo não é a ideal mas é o único registro em vídeo que tive acesso desse momento incrível.</p>
+
+				<div class="canvas">
+				<div>
+					<img src="img/totoro_live_foto.jpg" width="800px">
+				</div>
+				</div>
+
+				<div class="canvas">
+					<object width="800" height="500" data="https://www.youtube.com/embed/Na0cIm7HuAM"></object>
+				</div>
+
+				<p>Uma observação quanto ao download, baixe a pasta “totoro” inteira pois as imagens usadas para personalização estão nela, e sem as imagens o programa provavelmente não funcionará :)</p>
+
+			</h6>
+				
+			<div id= "link_codigo">
+				<a  href="https://drive.google.com/open?id=1h4EdpJ7nXJoozM3YLpXxiwQ9XKAYP8bw" target="_blank">Link para download do código</a>
+			</div>
+			
+			
+			
+
+		</div>
+	
+	<!-- Fim do contatos -->
+
+	<div class="rodape">
+		Orgulhosamente desenvolvido por Igor Gomes
+	</div>
+	<footer>
+		<script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+		<script type="text/javascript" src="bootstrap.min.js"></script>
+		<script type="text/javascript" src="script.js"></script>
+		<script src="p5.js" type="text/javascript"></script>
+	</footer>
+</body>
+</html>

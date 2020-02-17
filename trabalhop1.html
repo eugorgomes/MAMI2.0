@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Utilizar caracteres brasileiros -->
+	<meta charset="utf-8">
+
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"> 
+	<!-- Usado para responsividade do site -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Links para o arquivo de estilo e do css do bootstrap -->
+	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+
+	<title>MAMI Trabalho</title>
+</head>
+<body>
+	<!-- Criação do menu superior -->
+	<nav class="navbar  navbar-expand-lg">
+		<div class="container topo">
+			<a class ="navbar-brand mb-9" href="index.html">
+				<img src="img/back.png">
+			</a>
+		</div>
+	</nav>
+	<!-- Fim do menu superior -->
+	
+
+	<!-- Contatos -->
+	<div class="container">
+		<div class="titulos" id="contatos">
+			<h3>Trabalho - parte 1</h3>
+			<h6>
+				<p>Atividade da disciplina de matemática aplicada à multimídia 1. Bom… O trabalho do semestre foi desenvolver a releitura de um jogo da segunda geração, o jogo que eu escolhi foi “Kaboom!”.<p>
+
+				<div class="canvas">
+				<div>
+					<img src="img/kaboom.jpg">
+				</div>
+				</div>
+
+				<p>Kaboom! é um game desenvolvido pela activision em 1981 inicialmente para atari 2600, a mecânica original do jogo é bem simples, o jogador controla 3 baldes com água enquanto um bombardeiro louco atira bombas do alto de um muro, esses baldes só podem ser movimentados pelo jogador no eixo horizontal e o objetivo no jogo é não deixar que as bombas toquem o chão, toda vez que uma bomba cai no chão o jogador perde um balde, cada vez que o jogador apanha uma bomba ele ganha  pontos e sempre que o jogador marca 1000 pontos é adquirido mais um balde, respeitando o limite de 3 baldes.</p>
+
+				<div class="canvas">
+				<div>
+					<img src="img/kaboom2.webp">
+				</div>
+				</div>
+				
+				<p>Kaboom! é um jogo bem casual e o objetivo do jogo não é muito pretensioso, porém, essa simplicidade cativou os usuários e o game foi bem recebido e bem sucedido comercialmente, vendendo mais de 1 milhão de cartuchos em 1983.</p>
+
+				<p>Uma curiosidade é que se um jogador conseguisse um placar de 3000 pontos ou mais, a Activision premiava-o com um patch (Adesivo de condecoração) especial chamado Bucket Brigade (brigada do balde).</p>
+
+				<p>Sendo assim, a releitura proposta é um jogo de raciocínio e agilidade com tema de The Powerpuff Girls (As Meninas Superpoderosas), desenho animado da Cartoon Network.</p>
+
+				<p>O modele natural do game é tão simples quanto o de Kaboom!, neste o jogador deve sobreviver e proteger proteger a cidade de Townsville de um ataque do vilão mais fabuloso da série chamado Ele.</p>
+
+				<p>A tela do jogo tem 1000 pixels de largura e 700 pixels de altura, as meninas têm 100 pixels de altura e 61 de largura e o vilão tem 200 de altura e 141 de largura.</p>
+
+				<p>Quanto a mecânica da releitura, diferente dos baldes com água, o jogador controla as meninas superpoderosas através do mouse, a velocidade delas depende da velocidade da movimentação do mouse também, elas podem ser movidas por quase toda a tela, exceto a parte superior, pois este é onde o vilão se encontra. O Ele se move apenas horizontalmente a uma velocidade constante de 300 pixels por segundo, semelhante ao bombardeiro louco e sempre que colide com os limites horizontais da tela, o vilão muda de direção.</p>
+
+				<div class="canvas">
+				<div>
+					<img src="img/trab1.webp">
+				</div>
+			</div>
+
+				<p>Por problemas técnicos o gif não remete a velocidade real da aplicação :/</p>
+
+				<p>Diferente do vilão de Kaboom!, que só derrubava bombas, nesse movimento horizontal o Ele deixa cair itens que têm velocidades diversas e podem ser destrutivos ou benéficos, o jogador deve clicar sobre os itens com o botão direito ou esquerdo do mouse, em Kaboom! o jogador só controla o movimento horizontal, sem precisar pressionar nenhum botão adicional para a coleta das bombas.</p>
+
+			<div class="canvas">
+				<div>
+					<img src="img/trab2.webp">
+				</div>
+			</div>
+
+			<p>O botão direito destrói itens e o botão esquerdo coleta-os, o jogador pode destruir itens benéficos sem problemas mas não pode coletar itens maléficos, se isso acontecer ele perde uma das barras de vida. </p>
+
+			<p>No caso abaixo o jogador destruiu a bola de fogo e nada aconteceu.</p>
+
+			<div class="canvas">
+				<div>
+					<img src="img/trab3.webp">
+				</div>
+			</div>
+			
+			<p>Nesse outro caso o jogador coletou a bola de fogo e perdeu uma barra de vida.</p>
+
+			<div class="canvas">
+				<div>
+					<img src="img/trab4.webp">
+				</div>
+			</div>
+
+			<p>O jogados inicia com o total de 3 barras de vida, semelhante aos baldes de água, se coleta um item destrutivo fica com duas barras de vida, se coleta um item indevido mais uma vez perde-se mais uma barra de vida, e se coleta itens destrutivos novamente o jogo acaba.</p>
+
+			<div class="canvas">
+				<div>
+					<img src="img/trab5.png">
+				</div>
+			</div>
+
+			<p>Algo parecido acontece caso o jogador deixe cair itens destrutivos na cidade, a cidade inicia com 3 de resistência e caso o jogador deixe cair itens ruins nela ela perde 1 de resistência, se a resistência chega a 0 o jogo acaba.</p>
+
+			<p>Exemplo abaixo da cidade com 1 de resistência, a resistência pode ser vista pelos ícones abaixo da barra de vida.</p>
+
+			<div class="canvas">
+				<div>
+					<img src="img/trab6.png">
+				</div>
+			</div>
+
+			<p>Parecido com o jogo original, no qual o jogador ganha um balde quando completa 1000 pontos,na releitura pode-se ganhar vidas caso o jogador colete uma quantidade específica de itens benéficos.</p>
+
+			<p>Neste os pontos aumentam com o tempo, juntamente com a dificuldade do jogo, no caso, a velocidade dos itens.</p>
+
+			<div class="canvas">
+				<div>
+					<img src="img/trab7.webp">
+				</div>
+			</div>
+
+			<p>O jogo termina caso o jogador perca todas as barras de vida, a cidade perca toda a resistência ou o player chegue a um determinado número de pontos e vença o jogo.</p>
+
+		</h6>		
+			
+
+		</div>
+	
+	<!-- Fim do contatos -->
+
+	<div class="rodape">
+		Orgulhosamente desenvolvido por Igor Gomes
+	</div>
+	<footer>
+		<script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+		<script type="text/javascript" src="bootstrap.min.js"></script>
+		<script type="text/javascript" src="script.js"></script>
+		<script src="p5.js" type="text/javascript"></script>
+	</footer>
+</body>
+</html>

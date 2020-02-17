@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Utilizar caracteres brasileiros -->
+	<meta charset="utf-8">
+
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"> 
+	<!-- Usado para responsividade do site -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Links para o arquivo de estilo e do css do bootstrap -->
+	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+
+	<title>Cubo</title>
+</head>
+<body>
+	<!-- Criação do menu superior -->
+	<nav class="navbar  navbar-expand-lg">
+		<div class="container topo">
+			<a class ="navbar-brand mb-9" href="index.html">
+				<img src="img/back.png">
+			</a>
+		</div>
+	</nav>
+	<!-- Fim do menu superior -->
+	
+
+	<!-- Contatos -->
+	<div class="container">
+		<div class="titulos" id="contatos">
+			<h3>Cubo</h3>
+			<h6>
+				<p>Esse sketch foi feito como atividade da disciplina de matemática aplicada à multimídia 1. A tarefa pedia para que, empregando a instrução box() do processing, demonstrassemos graficamente que o cubo é o paralelepípedo que apresenta o melhor aproveitamento de volume.<p>
+
+				<p>Como sabemos, o volume de um paralelepípedo é dado pela seguinte equação: VOLUME = A x B x C<p>
+
+
+				<p>Onde <i>A</i> é o comprimento, <i>B</i> é a largura e <i>C</i> é a altura do objeto, esses parâmetros são inseridos na função <i>box()</i> do processing, porém, ao invés de inserir números nos parâmetros, inseri a posição do mouse no eixo X para o comprimento, a posição do mouse no eixo Y para a altura e para a largura usei o botão direito do mouse para aumentar e o botão esquerdo para diminuir, assim, o usuário consegue modificar as 3 dimensões do paralelepípedo.</p>
+
+				<p>Para termos uma ideia de que o cubo é a forma que apresenta o melhor aproveitamento do volume, faremos uma suposição.<br>
+				Digamos que temos o número 150 para distribuir entre a largura, altura e comprimento de um paraleleípedo, se usarmos o mesmo número para 
+				as 3 dimensões do paralelepípedo teremos um cubo de 50 de altura, 50 de largura e 50 de comprimento, isso usa todo o número 150 e conseguimos
+				um volume de 125000, afinal, VOLUME = altura x largura x profundidade. Agora tente disdribuir os 150 com outros valores para as dimensões
+				do objeto e perceba que nenhuma combinação diferente de 50x50x50 conseguirá um resultado maior do que 125000.</p>
+
+				<p>Para representar isso visualmente, utilizei o processing em suas funções de manipulação de objetos tridimensionais, o objeto no canvas é manipulável pelo usuário, o manupulador do sketch verá então um paralelepípedo verde quando este for um cubo perfeito e um paralelepípedo vermelho quando este não for um cubo. Aqui eu basicamente já tinha o que precisava, o programa basicamente já cumpria seu papel, apesar de ser quase impossível conseguir o cubo verde sem nenhuma informação adicional além de um cubo verde ou um paralelepípedo vermelho, por um momento pensei em deixar desse jeito e desejar só boa sorte para quem fosse tentar, porém, mudei de ideia e usei a função text() do processing para retornar ao usuário do programa as medidas de altura, largura e comprimento do paralelepípedo, assim ele poderia saber qual dimensão modificar para chegar ao cubo verde e além disso poderia ver que quando o cubo estava desta cor as medidas eram todas iguais, ou seja, um cubo perfeito.</p>
+			</h6>
+			<div class="canvas">
+				<div>
+					<img src="img/video.gif" alt="Imagem animada de um paralelepípedo mudando suas dimensões">
+				</div>
+			</div>
+			<div id= "link_codigo">
+				<a  href="https://drive.google.com/open?id=1A29M1sh4_e6PYbghAH4YZhFqd40wBE2C" target="_blank">Link para download do código</a>
+			</div>
+			
+
+		</div>
+		
+
+	</div>
+	<!-- Fim do contatos -->
+
+	<div class="rodape">
+		Orgulhosamente desenvolvido por Igor Gomes
+	</div>
+	<footer>
+		<script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+		<script type="text/javascript" src="bootstrap.min.js"></script>
+		<script type="text/javascript" src="script.js"></script>
+		<script src="p5.js" type="text/javascript"></script>
+	</footer>
+</body>
+</html>

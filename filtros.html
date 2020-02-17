@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Utilizar caracteres brasileiros -->
+	<meta charset="utf-8">
+
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"> 
+	<!-- Usado para responsividade do site -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Links para o arquivo de estilo e do css do bootstrap -->
+	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+
+	<title>Filtros</title>
+</head>
+<body>
+	<!-- Criação do menu superior -->
+	<nav class="navbar  navbar-expand-lg">
+		<div class="container topo">
+			<a class ="navbar-brand mb-9" href="index.html">
+				<img src="img/back.png">
+			</a>
+		</div>
+	</nav>
+	<!-- Fim do menu superior -->
+	
+
+	<!-- Contatos -->
+	<div class="container">
+		<div class="titulos" id="contatos">
+			<h3>Filtros</h3>
+			<h6>
+				<p>Esse sketch foi feito como atividade da disciplina de matemática aplicada à multimídia 1. Nessa tarefa criamos filtros para imagens utilizando variáveis para o controle de valores.<p>
+
+				<p>Essa foi a imagem utilizada na aplicação:</p>
+
+				<div class="canvas">
+					<div>
+						<img src="img/filtro1.jpg">
+					</div>
+				</div>
+				
+				<p>O primeiro filtro foi o de ruído, para este, utilizei um laço for() para aplicar pixels de outras cores sobre a imagem, nesse caso escolhi 100.000 pixels, ou seja, o laço executa a ação 100 mil vezes, essa ação basicamente é usar uma cor gerada por um random() e aplicar na imagem utilizando a função set().</p>
+
+				<p>Resultado:</p>
+
+				<div class="canvas">
+					<div>
+						<img src="img/filtro2.jpg">
+					</div>
+				</div>
+
+				<p>O segundo filtro foi o cinza, para esse, utilizei dois laços for() para percorrer todos os pixels da imagem, cada vez que um pixel era selecionado usando a função get(), sua cor era coletada, então, usando o modo de cor HBS, eu devolvi para a imagem somente o brightness(brilho) usando a função set().</p>
+
+				<p>Resultado:</p>
+
+				<div class="canvas">
+					<div>
+						<img src="img/filtro3.png">
+					</div>
+				</div>
+
+				<p>O terceiro filtro foi de cor vermelha, para esse, novamente utilizei dois laços para percorrer a imagem, porém, para a aplicação da cor vermelha, utilizei o modo de cor RGB, recolhi a cor da imagem original usando a função get() e devolvi somente a quantidade de vermelho de cada pixel usando a função set().</p>
+
+				<p>Resultado:</p>
+
+				<div class="canvas">
+					<div>
+						<img src="img/filtro4.png">
+					</div>
+				</div>
+
+				<p>O ultimo filtro foi amarelo, nesse, utilizei basicamente a mesma técnica do filtro vermelho, usando dois laços para percorrer a imagem e usando o modo de cor RGB. A diferença foi que nesse filtro eu recolhi a quantidade de verde e vermelho de cada pixel, pois essa mistura gera amarelo no modo RGB, então para aplicar a cor na imagem fiz uma média aritmética entre os valores de vermelho e verde ((R+G)/2) e apliquei na cor RGB, (((R+G)/2),((R+G)/2),0).</p>
+
+				<p>Resultado:</p>
+
+				<div class="canvas">
+					<div>
+						<img src="img/filtro5.png">
+					</div>
+				</div>
+			
+				<p>Uma observação quanto ao download, baixe a pasta “filtros” inteira pois as imagens usadas para personalização estão nela, e sem as imagens o programa provavelmente não funcionará :)</p>	
+			</h6>
+			<div id= "link_codigo">
+				<a  href="https://drive.google.com/open?id=19gSxzV9ZkLrMRauvjfgtBQdchKFlkCpq" target="_blank">Link para download do código</a>
+			</div>
+			
+			
+			
+
+		</div>
+	
+	<!-- Fim do contatos -->
+
+	<div class="rodape">
+		Orgulhosamente desenvolvido por Igor Gomes
+	</div>
+	<footer>
+		<script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+		<script type="text/javascript" src="bootstrap.min.js"></script>
+		<script type="text/javascript" src="script.js"></script>
+		<script src="p5.js" type="text/javascript"></script>
+	</footer>
+</body>
+</html>

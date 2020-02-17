@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Utilizar caracteres brasileiros -->
+	<meta charset="utf-8">
+
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"> 
+	<!-- Usado para responsividade do site -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Links para o arquivo de estilo e do css do bootstrap -->
+	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+
+	<title>Pong</title>
+</head>
+<body>
+	<!-- Criação do menu superior -->
+	<nav class="navbar  navbar-expand-lg">
+		<div class="container topo">
+			<a class ="navbar-brand mb-9" href="index.html">
+				<img src="img/back.png">
+			</a>
+		</div>
+	</nav>
+	<!-- Fim do menu superior -->
+	
+
+	<!-- Contatos -->
+	<div class="container">
+		<div class="titulos" id="contatos">
+			<h3>Pong</h3>
+			<h6>
+				<p>Esse sketch foi feito como atividade da disciplina de matemática aplicada à multimídia 1. Nessa atividade nos foi pedido que com base no desenvolvimento de uma versão do pong com dois bastões controlados pelas teclas up,down,w e s explicássemos a diferença entre a função KeyPressed() e a variável KeyPressed do processing.<p>
+
+				<p>Para o desenvolvimento do jogo primeiramente criei dois bastões usando a função rect(), cada bastão em um lado da tela, esses bastões sem mantém na mesma posição X e variam a posição Y, essa movimentação Y se dá pelo pressionamento de uma tecla usando a função keyPressed(), que é chamada sempre que uma tecla é pressionada, diferente da variável KeyPressed que é uma booleana e fica verdadeira sempre que uma tecla é pressionada.</p>
+
+				<p>Após isso criei uma pequena elipse que será a bola do jogo,  inseri variáveis nos seus parâmetros de localização X e Y para que ela possa se mover livremente pela tela, uma condição foi adicionada para sempre que a bolinha tocar as extremidades verticais da tela ela inverta o sinal do deslocamento, ou seja, ela bate no teto ou chão e volta.<p>
+
+				<p>Isso poderia ser feito nas extremidades horizontais também mas é aí que está a diversão, para retornar horizontalmente a bolinha precisa colidir com o bastão, para essa colisão usei uma verificação para checar se a bolinha estava na área ocupada pelo bastão, e assim o jogo funciona, sempre que a bolinha sai pelo lado um jogador ganha 1 ponto, e com mais uma condição fiz com que a bolinha saia do centro da tela sempre que alguém pontuar, assim o jogo continua.</p>
+
+				<p>O resultado foi esse:</p>
+			</h6>	
+
+				<div class="canvas">
+				<div>
+					<img src="img/pong.webP">
+				</div>
+				</div>
+				
+			<div id= "link_codigo">
+				<a  href="https://drive.google.com/open?id=1QBZ-RG9ITHagoOO9u-vQayVgOMbZ65I4" target="_blank">Link para download do código</a>
+			</div>
+			
+			
+			
+
+		</div>
+	
+	<!-- Fim do contatos -->
+
+	<div class="rodape">
+		Orgulhosamente desenvolvido por Igor Gomes
+	</div>
+	<footer>
+		<script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+		<script type="text/javascript" src="bootstrap.min.js"></script>
+		<script type="text/javascript" src="script.js"></script>
+		<script src="p5.js" type="text/javascript"></script>
+	</footer>
+</body>
+</html>

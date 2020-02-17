@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Utilizar caracteres brasileiros -->
+	<meta charset="utf-8">
+
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"> 
+	<!-- Usado para responsividade do site -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Links para o arquivo de estilo e do css do bootstrap -->
+	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+
+	<title>Recursividade</title>
+</head>
+<body>
+	<!-- Criação do menu superior -->
+	<nav class="navbar  navbar-expand-lg">
+		<div class="container topo">
+			<a class ="navbar-brand mb-9" href="index.html">
+				<img src="img/back.png">
+			</a>
+		</div>
+	</nav>
+	<!-- Fim do menu superior -->
+	
+
+	<!-- Contatos -->
+	<div class="container">
+		<div class="titulos" id="contatos">
+			<h3>Recursividade</h3>
+			<h6>
+				<p>Esse sketch foi feito como estudo pessoal. No estudo, utilizo os conceitos de recursividade para criar padrões visualmente interessantes.<p>
+
+				<p>Recursividade é a definição de um método que chama a si mesmo. Ele tem o poder de substituir um ou mais laços na programação. Nos casos estudados aqui, os sketches usando recursividade substituem vários laços de repetição.</p>
+
+				<p>Um fato que me interessou bastante quando eu o descobri é que as funções no processing podem chamar a si mesmas, e é exatamente aí que a recursividade entra. No primeiro exemplo, utilizamos uma função que desenha duas linhas, a primeira vai da posição (x,y) até a posição (x-h,y-h) e a segunda vai da posição (x,y) até a posição (x+h,y+h) onde h é o comprimento da linha. Nesse caso, a função de criar as linhas recebe os valores de X, Y e H, depois disso confere se H é maior do que 2, pois, caso não seja, a função deve parar. É importante que haja uma condição de parada, pois isso garante que a recursividade não seja infinita.</p>
+
+				<p>Temos então aqui o resultado visual das linha começando no centro do canvas e sendo redesenhadas no centro das linhas anteriores, isso acontece pois o H é sempre dividido por 2 antes da função chamar a si própria.</p>
+
+				<p>O resultado é esse:</p>
+
+				<div class="canvas">
+				<div>
+					<img src="img/recursividade1.png">
+				</div>
+				</div>
+
+
+				<p>Aqui temos outro padrão que segua o mesmo conceito, a função verifica se o raio do círculo é maior que 2, caso seja, ela cria círculos menores nas laterais e na parte inferior do circulo anterior.</p>
+
+				<div class="canvas">
+				<div>
+					<img src="img/recursividade2.png">
+				</div>
+				</div>
+
+				<p>Aqui temos outro padrão, porém com retângulos e o uso da função rotate().<p>
+
+				<div class="canvas">
+				<div>
+					<img src="img/recursividade3.png">
+				</div>
+				</div>
+
+				<p>E por ultimo, uma recursividade com círculos que usa a função rotate constantemente para gerar o seguinte efeito:</p>
+
+				<div class="canvas">
+				<div>
+					<img src="img/recursividade.gif">
+				</div>
+				</div>	
+
+			</h6>
+				
+			<div id= "link_codigo">
+				<a  href="https://drive.google.com/open?id=1xm8QWUEon0YlYu_wFBu-ClPmtEZLOqLD" target="_blank">Link para download dos códigos</a>
+			</div>
+			
+			
+			
+
+		</div>
+	
+	<!-- Fim do contatos -->
+
+	<div class="rodape">
+		Orgulhosamente desenvolvido por Igor Gomes
+	</div>
+	<footer>
+		<script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+		<script type="text/javascript" src="bootstrap.min.js"></script>
+		<script type="text/javascript" src="script.js"></script>
+		<script src="p5.js" type="text/javascript"></script>
+	</footer>
+</body>
+</html>

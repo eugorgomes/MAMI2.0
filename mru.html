@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Utilizar caracteres brasileiros -->
+	<meta charset="utf-8">
+
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"> 
+	<!-- Usado para responsividade do site -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Links para o arquivo de estilo e do css do bootstrap -->
+	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+
+	<title>MRU</title>
+</head>
+<body>
+	<!-- Criação do menu superior -->
+	<nav class="navbar  navbar-expand-lg">
+		<div class="container topo">
+			<a class ="navbar-brand mb-9" href="index.html">
+				<img src="img/back.png">
+			</a>
+		</div>
+	</nav>
+	<!-- Fim do menu superior -->
+	
+
+	<!-- Contatos -->
+	<div class="container">
+		<div class="titulos" id="contatos">
+			<h3>MRU</h3>
+			<h6>
+				<p>Esse sketch foi feito como atividade da disciplina de matemática aplicada à multimídia 1. Em sala havíamos feito uma atividade que usava algumas equações simples de movimento retilíneo uniforme para fazer uma bolinha mover-se pela tela mostrando seu rastro, através do canvas e do console do processing pudemos observar que ela percorria a mesma distância no mesmo espaço de tempo, no caso 1 segundo.<p>
+
+				<p>A equação para a obtenção do descolamento se dá da seginte forma: D = V x T<br>
+				Onde D = Deslocamento do objeto, V = Velocidade do objeto e T = Tempo.</p>
+
+				<p>O resultado do estudo em sala foi este:<p>
+
+				<div class="canvas">
+				<div>
+					<img src="img/tumblr.webP">
+				</div>
+				</div>
+				
+				<p>Porém, a atividade pra valer era explicar as alterações necessárias no código para a execução da simulação a 60 fps, mantendo o tempo real, ou seja, teríamos que fazer a mesma bolinha percorrer o trajeto na mesma velocidade, porém, não usaríamos a função frameRate() do processing e isso faria a bolinha seguir mais suavemente seu percurso.</p>
+
+				<p>As alterações essenciais para essa tarefa foram poucas, basicamente eu removi a função frameRate(1) que fazia o void draw(){} rodar uma vez a cada segundo, isso já deixaria a animação suavizada pois normalmente o void draw(){} roda a 60 fps, porém, o tempo não seria real pois o contador que faz o tempo passar no código ainda estaria aumentando a cada loop, então, já que a velocidade do loop aumentou 60 vezes, uma saída seria fazer o tempo aumentar 60 vezes mais devagar, ou seja, dividir o contador por 60.</p>
+
+				<p>Ou seja, se no estudo em sala o tempo tem incremento de 1 por loop do programa, na atividade de casa esse incremento deve ser de 1/60.</p>
+
+				<p>Teoricamente isso faria o programa funcionar, porém, para que o contador de tempo aumentasse frações de segundo, teríamos que fazer uma divisão não inteira, ou seja, mudar o tipo da variável de tempo para float, para garantir que tudo funcionaria bem eu mudei logo o tipo de todas as variáveis globais e na divisão do tempo usei “tAtual += 1.0/60.0“ ao invés de ”tAtual += 1/60“.</p>
+
+				<p>Um pouco mais acima eu citei as alterações essenciais, falei isso porque dei uma personalizada no programa e isso exigiu a utilização de algumas outras funções, mas para não deixar o texto muito longo e para não fugir do foco da atividade não vou detalhar tal processo.</p>
+
+				<p>O resultado foi esse:</p>
+			</h6>
+			<div class="canvas">
+				<div>
+					<img src="img/mru_gif.gif" alt="Imagem animada de um pokemon movendo-se pela tela">
+				</div>
+			</div>
+
+			<h6>
+				<p>Uma observação quanto ao download, baixe a pasta “mru” inteira pois as imagens usadas para personalização estão nela, e sem as imagens o programa provavelmente não funcionará :)</p>	
+			</h6>
+			<div id= "link_codigo">
+				<a  href="https://drive.google.com/open?id=1tdv6rAwzc5Z0lya58uDh1rYtyVzQhMSk" target="_blank">Link para download do código</a>
+			</div>
+			
+			
+			
+
+		</div>
+	
+	<!-- Fim do contatos -->
+
+	<div class="rodape">
+		Orgulhosamente desenvolvido por Igor Gomes
+	</div>
+	<footer>
+		<script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+		<script type="text/javascript" src="bootstrap.min.js"></script>
+		<script type="text/javascript" src="script.js"></script>
+		<script src="p5.js" type="text/javascript"></script>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Utilizar caracteres brasileiros -->
+	<meta charset="utf-8">
+
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"> 
+	<!-- Usado para responsividade do site -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Links para o arquivo de estilo e do css do bootstrap -->
+	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+
+	<title>Máquina de Estados finitos</title>
+</head>
+<body>
+	<!-- Criação do menu superior -->
+	<nav class="navbar  navbar-expand-lg">
+		<div class="container topo">
+			<a class ="navbar-brand mb-9" href="index.html">
+				<img src="img/back.png">
+			</a>
+		</div>
+	</nav>
+	<!-- Fim do menu superior -->
+	
+
+	<!-- Contatos -->
+	<div class="container">
+		<div class="titulos" id="contatos">
+			<h3>Máquina de Estados Finitos</h3>
+			<h6>
+				<p>Esse sketch foi feito como atividade da disciplina de matemática aplicada à multimídia 1. A atividade nos pedia para simular o funcionamento de um objeto usando uma máquina de estados finitos de no mínimo 3 estados eu escolhi reproduzir um refletor multicor, que muda entre as cores verde, vermelho e azul, também existe uma luz branca mas essa representa apenas o refletor ligado.<p>
+
+				<p>Antes de tudo, projetei os possíveis estados da máquina, os estados ficaram um pouco entrelaçados mas o funcionamento é assim mesmo.</p>
+
+				<div class="canvas">
+				<div>
+					<img src="img/diagrama.png">
+				</div>
+				</div>
+				
+				<p>O refletor inicia desligado e só pode ir para o estado ligado, pressionando a tecla ‘l’, depois de ligado ele pode mudar para qualquer uma das cores, pressionando as teclas ‘r’ para o vermelho, ‘g’ para o verde ou ‘b’ para o azul, ou pode ser desligado novamente apertando a tecla ‘d’, escolhida uma cor, elas podem ser alternadas indefinidamente ou podem ser desligadas, é isso que esse diagrama indica.</p>
+
+				<p>Com isso fiz a máquina de estados usando um procedimento com algumas funções if(), e usei a função keyPressed() para alternar os estados da máquina.</p>
+
+				<p>O resultado foi esse:</p>
+			</h6>
+			<div class="canvas">
+				<div>
+					<img src="img/refletor.webp">
+				</div>
+			</div>
+
+			<div id= "link_codigo">
+				<a  href="https://drive.google.com/open?id=1G0nohoJh0pqJMjrBKQ4rZpvpngjgzU-4" target="_blank">Link para download do código</a>
+			</div>
+			
+			
+			
+
+		</div>
+	
+	<!-- Fim do contatos -->
+
+	<div class="rodape">
+		Orgulhosamente desenvolvido por Igor Gomes
+	</div>
+	<footer>
+		<script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+		<script type="text/javascript" src="bootstrap.min.js"></script>
+		<script type="text/javascript" src="script.js"></script>
+		<script src="p5.js" type="text/javascript"></script>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Utilizar caracteres brasileiros -->
+	<meta charset="utf-8">
+
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"> 
+	<!-- Usado para responsividade do site -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Links para o arquivo de estilo e do css do bootstrap -->
+	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+
+	<title>Olho e Trigonometria</title>
+</head>
+<body>
+	<!-- Criação do menu superior -->
+	<nav class="navbar  navbar-expand-lg">
+		<div class="container topo">
+			<a class ="navbar-brand mb-9" href="index.html">
+				<img src="img/back.png">
+			</a>
+		</div>
+	</nav>
+	<!-- Fim do menu superior -->
+	
+
+	<!-- Contatos -->
+	<div class="container">
+		<div class="titulos" id="contatos">
+			<h3>Olho e Trigonometria</h3>
+			<h6>
+				<p>Esse sketch foi feito como atividade da disciplina de matemática aplicada à multimídia 1. Nessa atividade nos foi proposto criar a aplicação que represente um olho que está sempre voltado para o cursor do mouse sem sair de uma determinada área.<p>				
+
+				<p>Para essa aplicação usei a função atan2() do processing para retornar o ângulo em que o mouse se encontrava dado os valores das posições x e y do mesmo. Após descobrir o ângulo do mouse, criei condições com a função if() para que o olho se movesse na mesma posição do mouse caso o mesmo estivesse dentro da área determinada e usasse o ângulo do mouse  e usasse a distância limite caso o mouse estivesse fora da área determinada.</p>
+
+				<p>Dessa forma o olho sempre segue o mouse.</p>
+
+				<p>O resultado desse processo foi esse:</p>
+
+				<div class="canvas">
+					<img src="img/olho.webp">
+				</div>
+
+			</h6>
+			<div id= "link_codigo">
+				<a  href="https://drive.google.com/open?id=1wfCOdpWshtfhIH8_WU8roKFIXdVObZAE" target="_blank">Link para download do código</a>
+			</div>
+			
+
+		</div>
+		
+
+	</div>
+		
+
+	</div>
+	<!-- Fim do contatos -->
+
+	<div class="rodape">
+		Orgulhosamente desenvolvido por Igor Gomes
+	</div>
+	<footer>
+		<script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+		<script type="text/javascript" src="bootstrap.min.js"></script>
+		<script type="text/javascript" src="script.js"></script>
+		<script src="p5.js" type="text/javascript"></script>
+	</footer>
+</body>
+</html>

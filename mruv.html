@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Utilizar caracteres brasileiros -->
+	<meta charset="utf-8">
+
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"> 
+	<!-- Usado para responsividade do site -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Links para o arquivo de estilo e do css do bootstrap -->
+	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+
+	<title>MRUV e ControlP5</title>
+</head>
+<body>
+	<!-- Criação do menu superior -->
+	<nav class="navbar  navbar-expand-lg">
+		<div class="container topo">
+			<a class ="navbar-brand mb-9" href="index.html">
+				<img src="img/back.png">
+			</a>
+		</div>
+	</nav>
+	<!-- Fim do menu superior -->
+	
+
+	<!-- Contatos -->
+	<div class="container">
+		<div class="titulos" id="contatos">
+			<h3>MRUV e ControlP5</h3>
+			<h6>
+				<p>Esse sketch foi feito como atividade da disciplina de matemática aplicada à multimídia 1. Nessa atividade nos foi pedido a construção de um simulador de lançamento balístico (que já tínhamos iniciado em sala) e discutir a implementação de ajustes na GUI do simulador.<p>
+
+				<p>Para esclarecer, GUI nada mais é que a interface gráfica do usuário.</p>
+
+				<p>Para a criação do simulador de lançamento balístico, usamos os conhecimentos adquiridos na atividade anterior (MRU) aplicando apenas mais alguns conceitos e equações do MRUV. Porém, como já adiantei acima, a atividade nos propôs criar uma interface para ajudar na utilização do simulador.<p>
+
+				<p>Como vimos anteriormente, a equação para a obtenção do deslocamento no moviemnto retilíneo uniforme é D = V x T. </p>
+
+				<p>Aqui no MRUV as coisas ficam um pouco mais complexas, para obtermos o deslocamento precisamos resolver a seguinte equação:<br>
+				D = V x T + (A x T x T)/2. </p>
+
+				<p>Onde D = Deslocamento, V = Velocidade inicial, T = Tempo e A = Aceleração.</p>
+				
+				<p>Usando a biblioteca controlP5 do processing adicionei 4 botões comuns e 1 botão deslizante, nos botões comuns empreguei funções de lançar, limpar, ativar rastro e remover rastro, e no botão deslizante fica a opção de ângulo no qual o projétil vai ser lançado.</p>
+
+				<p>O botão lançar impulsiona o projétil no ângulo determinado, o botão limpar limpa a tela e retorna o projétil para a posição inicial para que um novo ângulo possa ser escolhido e os botões de ativar e desativar o rastro habilitam ou desabilitam a visualização do percurso ao qual o projétil passou.</p>
+
+				<p>Os resultado foi esse:</p>
+			</h6>
+			<div class="canvas">
+				<div>
+					<img src="img/mruv_gif.gif" alt="Imagem animada de uma elipse movendo-se pela tela">
+				</div>
+			</div>
+			
+
+			<div id= "link_codigo">
+				<a  href="https://drive.google.com/open?id=16ygDx_7dpP_s7vDjz6EYR5covLuC_oPb" target="_blank">Link para download do código</a>
+			</div>
+			
+			
+			
+
+		</div>
+		
+
+	</div>
+		
+
+	</div>
+	<!-- Fim do contatos -->
+
+	<div class="rodape">
+		Orgulhosamente desenvolvido por Igor Gomes
+	</div>
+	<footer>
+		<script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+		<script type="text/javascript" src="bootstrap.min.js"></script>
+		<script type="text/javascript" src="script.js"></script>
+		<script src="p5.js" type="text/javascript"></script>
+	</footer>
+</body>
+</html>
